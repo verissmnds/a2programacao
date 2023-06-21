@@ -80,6 +80,7 @@ def main():
     st.header('Número de públicações em cada temática')
     st.bar_chart(df['Temas'].value_counts())
 
+    st.header('Publicações que fazem parte da categoria "Outros", ou seja, não estão presentes em nenhuma das demais citadas e analisadas.')
     df_outros = df[df['Temas'] == 'Outros'][['Description', 'Link']]
     df_outros
 
