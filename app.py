@@ -81,7 +81,7 @@ def main():
     st.bar_chart(df['Temas'].value_counts())
 
     st.header('Publicações que fazem parte da categoria "Outros", ou seja, não estão presentes em nenhuma das demais citadas e analisadas.')
-    st.markdown('df['Temas'] = np.select(condicoes, choices, default='Outros'')
+    print("df['Temas'] = np.select(condicoes, choices, default='Outros")
     df_outros = df[df['Temas'] == 'Outros'][['Description', 'Link']]
     df_outros
 
