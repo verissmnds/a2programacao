@@ -76,7 +76,9 @@ def main():
     st.header('Segurança')
     st.markdown("Aqui estão as publicações relacionadas ao tema segurança")
     st.dataframe(df2[df2['Temas'] == 'Segurança'])
-   
+
+st.header('Número de públicações em cada temática')
+st.bar_chart(df['Temas'].value_counts())
 
 
 if __name__ == '__main__':
