@@ -80,7 +80,7 @@ def main():
     st.header('Número de públicações em cada temática')
     st.bar_chart(df['Temas'].value_counts())
 
-    df_outros = df[df['Temas'] == 'Outros']['Description']['Link']
+    df_outros = df[df['Temas'] == 'Outros'][['Description', 'Link']]
     df_outros
 
 if __name__ == '__main__':
